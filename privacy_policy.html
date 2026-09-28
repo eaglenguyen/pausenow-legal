@@ -3,99 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — Pause Now</title>
+  <title>Privacy Policy — SpinBrek</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFF7ED;
+      --card: #FFFFFF;
+      --lip: #EADFD0;
+      --ink: #4A3728;
+      --body: #6B5A4B;
+      --tan: #B08A5A;
+      --line: #F0E6D8;
+      --mint: #B3E5CF;
+      --mint-soft: #E8F6EF;
+      --peach: #FCEBD5;
+    }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #0f0f1a;
-      color: #e0e0e0;
-      line-height: 1.7;
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--body);
+      line-height: 1.75;
       padding: 40px 20px 80px;
     }
-    .container {
-      max-width: 720px;
-      margin: 0 auto;
+    .container { max-width: 720px; margin: 0 auto; }
+
+    nav {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 40px;
     }
-    .badge {
+    nav a {
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--tan);
+      background: var(--peach);
+      text-decoration: none;
+    }
+    nav a.active { background: var(--ink); color: #fff; }
+
+    .brand {
       display: inline-block;
-      background: rgba(237, 184, 42, 0.12);
-      border: 1px solid rgba(237, 184, 42, 0.3);
-      color: #EDB82A;
+      background: var(--mint-soft);
+      color: #3E8E6E;
       padding: 4px 14px;
       border-radius: 50px;
       font-size: 13px;
       font-weight: 600;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
     h1 {
-      font-size: 36px;
+      font-size: 38px;
       font-weight: 800;
-      color: #ffffff;
+      color: var(--ink);
+      letter-spacing: -0.8px;
+      line-height: 1.15;
       margin-bottom: 6px;
-      letter-spacing: -0.5px;
     }
-    .meta {
-      color: #666;
-      font-size: 14px;
-      margin-bottom: 40px;
+    .meta { color: var(--tan); font-size: 14px; margin-bottom: 36px; }
+
+    .card {
+      background: var(--card);
+      border-radius: 24px;
+      padding: 8px 28px 24px;
+      box-shadow: 0 6px 0 var(--lip);
     }
     h2 {
       font-size: 18px;
       font-weight: 700;
-      color: #ffffff;
-      margin: 36px 0 10px;
+      color: var(--ink);
+      margin: 28px 0 10px;
       padding-bottom: 8px;
-      border-bottom: 1px solid #222;
+      border-bottom: 1px solid var(--line);
     }
     h3 {
       font-size: 15px;
       font-weight: 700;
-      color: #EDB82A;
-      margin: 20px 0 6px;
+      color: var(--tan);
+      margin: 20px 0 4px;
     }
-    p {
-      color: #b0b0b0;
-      margin-bottom: 14px;
-      font-size: 15px;
-    }
-    ul {
-      color: #b0b0b0;
-      padding-left: 20px;
-      margin-bottom: 14px;
-      font-size: 15px;
-    }
+    p, ul { font-size: 15px; margin-bottom: 14px; }
+    ul { padding-left: 20px; }
     ul li { margin-bottom: 6px; }
-    strong { color: #ffffff; }
-    a { color: #EDB82A; text-decoration: none; }
+    strong { color: var(--ink); font-weight: 600; }
+    a { color: #3E8E6E; font-weight: 500; text-decoration: none; }
     a:hover { text-decoration: underline; }
+
     .highlight {
-      background: rgba(237, 184, 42, 0.07);
-      border-left: 3px solid #EDB82A;
+      background: var(--mint-soft);
+      border-radius: 14px;
       padding: 14px 18px;
-      border-radius: 0 8px 8px 0;
       margin-bottom: 16px;
     }
-    .highlight p { margin: 0; color: #e0e0e0; }
+    .highlight p { margin: 0; color: var(--ink); }
+
     .contact-box {
-      background: #1a1a2e;
-      border: 1px solid #2a2a40;
-      border-radius: 12px;
-      padding: 20px;
+      background: var(--peach);
+      border-radius: 16px;
+      padding: 18px 20px;
       margin-top: 12px;
     }
-    .contact-box p { margin: 0; }
-    nav {
-      margin-bottom: 40px;
-      padding: 16px 20px;
-      background: #1a1a2e;
-      border-radius: 12px;
-      border: 1px solid #2a2a40;
-      display: flex;
-      gap: 20px;
+    .contact-box p { margin: 0; color: var(--ink); }
+
+    @media (max-width: 520px) {
+      h1 { font-size: 30px; }
+      .card { padding: 4px 20px 20px; }
     }
-    nav a { color: #888; font-size: 14px; }
-    nav a.active { color: #EDB82A; font-weight: 600; }
   </style>
 </head>
 <body>
@@ -105,69 +122,78 @@
       <a href="terms_of_service.html">Terms of Service</a>
     </nav>
 
-    <div class="badge">🔒 Legal</div>
+    <div class="brand">SpinBrek</div>
     <h1>Privacy Policy</h1>
-    <p class="meta">Pause Now &nbsp;·&nbsp; Last updated: June 18, 2026</p>
+    <p class="meta">Last updated: September 27, 2026</p>
 
-    <h2>1. Introduction</h2>
-    <p>Pause Now ("the App") is developed and operated by Eagle Nguyen, an individual developer based in the United States. This Privacy Policy explains how the App handles your information. By using Pause Now, you agree to the practices described in this policy.</p>
+    <div class="card">
+      <h2>1. Introduction</h2>
+      <p>SpinBrek ("the App"), formerly known as Pause Now, is developed and operated by Eagle Nguyen, an individual developer based in the United States. This Privacy Policy explains how the App handles your information. By using SpinBrek, you agree to the practices described in this policy.</p>
 
-    <h2>2. Information We Collect</h2>
-    <div class="highlight">
-      <p><strong>We do not collect, transmit, or store any personal data on external servers.</strong></p>
-    </div>
-    <p>All data generated by your use of the App is stored locally on your device using on-device storage (Hive and SharedPreferences). This includes:</p>
-    <ul>
-      <li>App usage preferences and settings</li>
-      <li>Blocking session history and statistics</li>
-      <li>XP points and streak data</li>
-      <li>Scheduled blocking sessions</li>
-      <li>Selected apps to block or allow</li>
-    </ul>
-    <p>This data never leaves your device and is not accessible to us or any third party.</p>
+      <h2>2. Information We Collect</h2>
+      <div class="highlight">
+        <p><strong>We do not collect, transmit, or store any personal data on external servers.</strong></p>
+      </div>
+      <p>All data generated by your use of the App is stored locally on your device using on-device storage (Hive and SharedPreferences). This includes:</p>
+      <ul>
+        <li>App usage preferences and settings, including your theme and accent color</li>
+        <li>Blocking session history and statistics</li>
+        <li>Stars and streak data</li>
+        <li>Scheduled blocking sessions, time limits, and open limits</li>
+        <li>Selected apps to block or allow</li>
+        <li>Your Spin the Wheel entries</li>
+      </ul>
+      <p>This data never leaves your device and is not accessible to us or any third party.</p>
 
-    <h2>3. Information Collected by Third Parties</h2>
+      <h2>3. Information Collected by Third Parties</h2>
 
-    <h3>RevenueCat</h3>
-    <p>Pause Now uses RevenueCat to process in-app purchases and subscriptions. RevenueCat may collect certain information necessary to process transactions, including your Apple ID and purchase history. This data is governed by RevenueCat's Privacy Policy, available at <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a>.</p>
+      <h3>RevenueCat</h3>
+      <p>SpinBrek uses RevenueCat to process in-app purchases and subscriptions. RevenueCat may collect certain information necessary to process transactions, such as an anonymous app user ID and purchase history. This data is governed by RevenueCat's Privacy Policy, available at <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a>.</p>
 
-    <h3>Apple</h3>
-    <p>Purchases and subscriptions are processed through Apple's App Store. Apple's handling of your data is governed by Apple's Privacy Policy, available at <a href="https://www.apple.com/legal/privacy" target="_blank">apple.com/legal/privacy</a>.</p>
+      <h3>Apple</h3>
+      <p>On iOS, purchases and subscriptions are processed through Apple's App Store. Apple's handling of your data is governed by Apple's Privacy Policy, available at <a href="https://www.apple.com/legal/privacy" target="_blank">apple.com/legal/privacy</a>.</p>
 
-    <h3>Screen Time / FamilyControls (iOS)</h3>
-    <p>On iOS, Pause Now uses Apple's FamilyControls and Screen Time APIs to block apps. These APIs operate entirely on-device. No app usage data is transmitted to us or any third party.</p>
+      <h3>Google</h3>
+      <p>On Android, purchases and subscriptions are processed through Google Play. Google's handling of your data is governed by Google's Privacy Policy, available at <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>.</p>
 
-    <h3>Accessibility Service (Android)</h3>
-    <p>On Android, Pause Now uses the Accessibility Service to detect which app is in the foreground and enforce blocking. This data is processed entirely on-device and is never transmitted externally.</p>
+      <h3>Screen Time / FamilyControls (iOS)</h3>
+      <p>On iOS, SpinBrek uses Apple's FamilyControls and Screen Time APIs to block apps and display your screen time. These APIs operate entirely on-device. No app usage data is transmitted to us or any third party.</p>
 
-    <h2>4. How We Use Your Information</h2>
-    <p>Since all data is stored locally on your device, we use it solely to:</p>
-    <ul>
-      <li>Display your blocking history and statistics</li>
-      <li>Maintain your XP, streaks, and session data</li>
-      <li>Enforce your scheduled and manual blocking sessions</li>
-      <li>Restore your session state if the app is closed and reopened</li>
-    </ul>
+      <h3>Accessibility Service and Usage Access (Android)</h3>
+      <p>On Android, SpinBrek uses the Accessibility Service to detect which app is in the foreground and enforce blocking, and Usage Access to measure app usage for time limits and screen time stats. This data is processed entirely on-device and is never transmitted externally.</p>
 
-    <h2>5. Data Sharing</h2>
-    <p>We do not sell, trade, or share your personal data with any third parties, except as described in Section 3 (third-party services used within the App).</p>
+      <h3>Notifications</h3>
+      <p>SpinBrek schedules local notifications on your device, such as session and break reminders. These are created on-device and do not involve any external server.</p>
 
-    <h2>6. Data Retention and Deletion</h2>
-    <p>All data is stored locally on your device. You can delete all App data at any time by uninstalling Pause Now from your device. Uninstalling the App permanently removes all locally stored data.</p>
+      <h2>4. How We Use Your Information</h2>
+      <p>Since all data is stored locally on your device, we use it solely to:</p>
+      <ul>
+        <li>Display your blocking history, screen time, and statistics</li>
+        <li>Maintain your stars, streaks, and session data</li>
+        <li>Enforce your scheduled, manual, and limit-based blocking</li>
+        <li>Restore your session state if the app is closed and reopened</li>
+      </ul>
 
-    <h2>7. Children's Privacy</h2>
-    <p>Pause Now is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has used this App, please contact us at <a href="mailto:eaglenguyen1@gmail.com">eaglenguyen1@gmail.com</a>.</p>
+      <h2>5. Data Sharing</h2>
+      <p>We do not sell, trade, or share your personal data with any third parties, except as described in Section 3 (third-party services used within the App).</p>
 
-    <h2>8. Security</h2>
-    <p>Since all data remains on your device, it is protected by your device's built-in security mechanisms (passcode, Face ID, Touch ID, etc.). We do not have access to your data and therefore cannot be responsible for breaches resulting from unauthorized access to your device.</p>
+      <h2>6. Data Retention and Deletion</h2>
+      <p>All data is stored locally on your device. You can delete all App data at any time by uninstalling SpinBrek from your device. Uninstalling the App permanently removes all locally stored data.</p>
 
-    <h2>9. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Changes will be reflected by updating the "Last updated" date at the top of this document. Continued use of the App after changes constitutes your acceptance of the updated policy.</p>
+      <h2>7. Children's Privacy</h2>
+      <p>SpinBrek is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has used this App, please contact us at <a href="mailto:eaglenguyen1@gmail.com">eaglenguyen1@gmail.com</a>.</p>
 
-    <h2>10. Contact</h2>
-    <div class="contact-box">
-      <p><strong>Eagle Nguyen</strong><br/>
-      <a href="mailto:eaglenguyen1@gmail.com">eaglenguyen1@gmail.com</a></p>
+      <h2>8. Security</h2>
+      <p>Since all data remains on your device, it is protected by your device's built-in security mechanisms (passcode, Face ID, Touch ID, etc.). We do not have access to your data and therefore cannot be responsible for breaches resulting from unauthorized access to your device.</p>
+
+      <h2>9. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Changes will be reflected by updating the "Last updated" date at the top of this document. Continued use of the App after changes constitutes your acceptance of the updated policy.</p>
+
+      <h2>10. Contact</h2>
+      <div class="contact-box">
+        <p><strong>Eagle Nguyen</strong><br/>
+        <a href="mailto:pause.now.2026@gmail.com">pause.now.2026@gmail.com/a></p>
+      </div>
     </div>
   </div>
 </body>
